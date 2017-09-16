@@ -1,0 +1,22 @@
+{
+    "name": "pmdunggh/vncode",
+    "version": "1.0.0",
+    "type": "library",
+    "description": "Tool for convert UTF-8, NCR, VN0",
+    "keywords": ["vncode","vietnamese","ncr","vn0"],
+    "license": "GNU v3.0",
+    "authors": [
+        {
+            "name": "Pham Minh Dung",
+            "email": "pmdung@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "autoload": {
+        "psr-4": {
+            "VanXuan\\": ""
+        }
+    },
+    "minimum-stability": "dev"
+}
