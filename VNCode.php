@@ -171,6 +171,14 @@ class VNCode {
 		return $result;
 	}
 
+	public static function getSEOString($utf8)
+	{
+		$name = urlencode(VNCode::UTF8VN0($utf8));
+		$name = preg_replace('/([\s]+)|(\%[\dABCDEF]+)|\+/','-',$name);
+		$name = preg_replace('/\-+/','-',$name);
+		$name = preg_replace('/(^\-)|(\-$)/','',$name);
+		return $name;
+	}
 	/**
 	 * @param $str
 	 *
